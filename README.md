@@ -46,7 +46,7 @@ Instead I prefer using something like this.
 
 ```javascript
 
-<span>
+
     <Switch>
       <Case when={this.state.user && this.state.user.loggedIn}>
         <h3>{this.state.user.name}</h3>
@@ -55,20 +55,19 @@ Instead I prefer using something like this.
         <h3><a href="/login">Please login</a></h3>
       </Else>
     </Switch>
-</span>
 
 ```
 
 Or simply - if you only need boolean conditionals
 
 ```javascript
-<span>
+
     <Visible when={this.state.user && this.state.user.loggedIn}>
         <h3>{this.state.user.name}</h3>
       <Other />
         <h3><a href="/login">Please login</a></h3>
     </Visible>
-</span>
+
 ```
 
 Of course your milage may vary, but I think the second form is more easy when you just scan the code.
@@ -84,11 +83,9 @@ More or less the same thing as `array.map` but easier to read.
   let somedata = [{id:1, name: 'a'}, {id:2, name: 'b'}]
   // ...
 
-<span>
   <ForEach data={somedata} expandProps>
     <UserLabel />
   </ForEach>
-</span>
 ```
 
 # FAQ/Notes
