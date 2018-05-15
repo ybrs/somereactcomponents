@@ -92,6 +92,10 @@ More or less the same thing as `array.map` but easier to read.
 
 There is a demo & documentation here https://ybrs.github.io/somereactcomponents/
 
+# NPM package
+
+https://www.npmjs.com/package/somereactcomponents
+
 # Installation & Usage
 
 ```
