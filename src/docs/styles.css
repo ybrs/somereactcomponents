@@ -1,0 +1,35 @@
+body {
+  background: #eee;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.components {
+  position: relative;
+}
+
+.compmenu {
+  width: 200px;
+  float: left;
+  position: fixed;
+  top: 10px;
+}
+
+.demo {
+  float: left;
+  padding-left: 200px;
+  width: 600px;
+}
+
+
+.democomp {
+  min-height: 1200px;
+
+}
+
+.box-small {
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: #780;
+  border: 1px solid #900;
+}
