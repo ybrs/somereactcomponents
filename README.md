@@ -88,6 +88,24 @@ More or less the same thing as `array.map` but easier to read.
   </ForEach>
 ```
 
+# Installation & Usage
+
+```
+yarn add somereactcomponents
+```
+
+or
+
+```
+npm i somereactcomponents --save
+```
+
+then you can use it as usual
+
+```javascript
+import {Visible, Switch, Case, Else, Other, ForEach, stateUpdater} from "somereactcomponents";
+```
+
 # FAQ/Notes
 
 ## Do I really need this ?
