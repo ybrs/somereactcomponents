@@ -88,6 +88,10 @@ More or less the same thing as `array.map` but easier to read.
   </ForEach>
 ```
 
+# Documentation
+
+There is a demo & documentation here https://ybrs.github.io/somereactcomponents/
+
 # Installation & Usage
 
 ```
