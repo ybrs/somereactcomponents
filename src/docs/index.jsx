@@ -1,9 +1,9 @@
 import React, {Component} from "react";
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import {Visible, Switch, Case, Else, Other, ForEach, stateUpdater} from "../../lib";
 import "./styles.css";
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { atomDark } from 'react-syntax-highlighter/styles/prism';
+import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/prism';
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import * as R from "ramda";
 
 
@@ -54,7 +54,7 @@ class UserLabelWithState2 extends Component {
 const StateUpdaterDemo = (props)=>{
   return <div className="democomp">
       <a name="components_stateupdater"></a>
-      <h1>Components > StateUpdater</h1>
+      <h1>Components {">"} StateUpdater</h1>
       <h3>Basic Usage</h3>
       <p>
           Sometimes you only need a generic state updater for your component.
@@ -129,7 +129,7 @@ const ForeachDemo = (props)=>{
   return <div className="democomp">
   <a name="components_foreach"></a>
 
-  <h1>Components > ForEach</h1>
+  <h1>Components {">"} ForEach</h1>
   <h3>Basic Usage</h3>
   <p>
     ForEach loops over an array/list and renders child components of itself
@@ -185,7 +185,7 @@ class Demo extends Component {
       <div>
         <a name="components_visible"></a>
 
-        <h1>Components > Visible</h1>
+        <h1>Components {">"} Visible</h1>
 
         <h3>Basic Usage</h3>
         <br/>
@@ -253,7 +253,7 @@ Please Login
 
 
 <a name="components_switch"></a>
-<h1>Components > Switch/Case</h1>
+<h1>Components {">"} Switch/Case</h1>
 <h3>Basic Usage</h3>
 <p>
 Sometimes simple boolean conditions are not enough.
@@ -343,4 +343,4 @@ const ComponentDemo = (props)=>
 
 
 
-render(<ComponentDemo />, document.getElementById("app"));
+createRoot(document.getElementById("app")).render(<ComponentDemo />);
